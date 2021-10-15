@@ -14,17 +14,17 @@ img {
 }
 p {
     text-align: center;
-    margin: 1rem;
+    margin: 12px;
     margin-top: 0px;
 }
 /****** modification des a > liens vers les sites de veille techno *****/
 a {
     text-decoration: none;
     font-size: 20px;
-    color: blueviolet;
+    color: black;
 }
 p:hover {
-    background: rgba(255, 0, 0, 0.37);
+    background: rgba(0, 102, 255, 0.37);
 }
 .cardlink img {
     width: 300px;
