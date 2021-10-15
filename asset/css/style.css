@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(199, 197, 197);
+}
+img {
+    width: 250px;
+}
+#parent {
+   display: grid;
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-columns: repeat(4, 1fr);
+   margin: 1rem;
+   padding: 1rem;
+   text-align: center;
+}
+p {
+    text-align: center;
+    margin: 1rem;
+    margin-top: 0px;
+}
+/****** modification des a > liens vers les sites de veille techno *****/
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: blueviolet;
+}
+p:hover {
+    background: rgba(255, 0, 0, 0.37);
+}
+.cardlink img {
+    width: 300px;
+    height: 180px;
+    margin-top: 20px;
+}
+/* mise en place du bouton scroll */
+.scrollToTopBtn:hover {
+    background-color: black;
+  }
+  .scrollToTopBtn {
+    background-color: rgba(0, 0, 0, 0.295);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    /* placez à droite dans le coin */
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    /* le garder en haut peu importe ce qu'il y a à cet endroit */
+    z-index: 100;
+    /* le cacher avec de l'opacité*/
+    opacity: 0;
+    /* ajouter un effet de translate */
+    transform: translateY(100px);
+    /* ajouter la transisition */
+    transition: all .5s ease;
+  } 
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /***** mise en place du responsive *******/
+  @media screen and (max-width:768px) {
+
+    #parent {
+        display: grid;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+     }
+    
+}
+/******** mise en place de la version tablette ****/
+@media only screen and (max-width: 1024px) {
+    #parent {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+     }
+}
