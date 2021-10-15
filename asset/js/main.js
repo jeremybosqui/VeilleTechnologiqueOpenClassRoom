@@ -5,7 +5,7 @@ let rootElement = document.documentElement
 function handleScroll() {
   // dire à la fonction ce qu'il faut faire quand on scroll sur l'écran à savoir afficher le bouton à partir d'un certain scroll sur la page et le faire de disparaitre à partir d'un certain scroll également avec else 
   var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
-  if ((rootElement.scrollTop / scrollTotal ) > 0.10) {
+  if ((rootElement.scrollTop / scrollTotal ) > 0.45) {
     // montrer le bouton 
     scrollToTopBtn.classList.add("showBtn")
   } else {
